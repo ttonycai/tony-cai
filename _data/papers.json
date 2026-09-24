@@ -268,9 +268,9 @@
         {
           "cv_number": 3,
           "year": "2026+",
-          "authors": "Liang, Z., Cai, T.T., Sun, W., and Xia, Y. (2026+).",
+          "authors": "Liang, Z., Cai, T.T., Sun, W., and Xia, Y. (2026).",
           "title": "A locally adaptive algorithm for multiple testing with network structure.",
-          "venue": "Statistica Sinica, to appear.",
+          "venue": "Statistica Sinica 36, 1861-1882.",
           "id": "a-locally-adaptive-algorithm-for-multiple-testing-with-network-structure",
           "url": "http://www-stat.wharton.upenn.edu/~tcai/paper/html/LASLA.html",
           "topics": ["mcp"],
