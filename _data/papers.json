@@ -221,6 +221,7 @@
           "pdf_url": "/assets/pdf/papers/FL-Functional-Mean.pdf"
       },
       {
+          "year": "2026+",
           "authors": "Cai, T. T., Li, Y., & Yuan, M. (2026+).",
           "title": "Minimax and adaptive covariance function estimation in functional data analysis.",
           "venue": "Statistica Sinica",
