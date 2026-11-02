@@ -11,6 +11,18 @@
       "title": "Technical Reports",
       "papers": [
         {
+          "authors": "Cai, T. T., Chakraborty, A., & Kpotufe, S. (2026).",
+          "title": "The geometry of multitask learning: Sharp rates for shared subspace estimation.",
+          "url": "https://arxiv.org/pdf/2610.40713",
+          "venue": "Technical report.",
+          "id": "the-geometry-of-multitask-learning",
+          "year": "2026",
+          "topics": ["learning", "linear-regression"],
+          "abstract": "Learning a shared subspace in multitask learning is an important statistical problem, yet exact rates remain poorly understood in many of the formal settings considered in the literature. To address this gap, which arises from limitations of existing upper-bound techniques, we propose a general multitask lemma. The lemma provides sufficient conditions for fast subspace estimation in generic multitask settings, in the form of geometric conditions on the task regression functions and their estimators. We subsequently show that the multitask lemma yields sharp minimax rates—previously unknown—for linear regression and classification in the regimes considered, and rates matching up to logarithmic factors for additive-noise regression.",
+          "pdf_url": "https://arxiv.org/pdf/2610.40713"
+        },
+
+        {
           "authors": "Cai, T. T. & Li, Y. (2026).",
           "title": "Exact asymptotic efficiency under zCDP: Diameter-constrained information geometry.",
           "venue": "Technical Report.",
