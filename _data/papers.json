@@ -638,7 +638,7 @@
           "pdf_url": "/assets/pdf/papers/SCAB.pdf"
         },
         {
-          "cv_number": 34,
+          "cv_number": 33,
           "year": "2022",
           "authors": "Cai, T.T. and Wei, H. (2022).",
           "title": "Distributed nonparametric regression: Optimal rate of convergence and cost of adaptation.",
@@ -650,7 +650,7 @@
           "pdf_url": "/assets/pdf/papers/Distributed-Nonparametric-Regression.pdf"
         },
         {
-          "cv_number": 33,
+          "cv_number": 34,
           "year": "2022",
           "authors": "Cai, T.T. and Wei, H. (2022).",
           "title": "Distributed adaptive Gaussian mean estimation with unknown variance: Interactive protocol helps adaptation.",
