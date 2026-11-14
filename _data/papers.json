@@ -16,7 +16,7 @@
           "venue": "Technical report.",
           "id": "statistics-age-of-AI",
           "year": "2026",
-          "topics": ["perspective", "review"],
+          "topics": ["applications"],
           "abstract": "Artificial intelligence (AI) is fundamentally transforming how data are generated, models are built, and scientific discoveries are made. These transformations make statistical decision theory an indispensable framework for evaluating procedures, assessing their consequences, and identifying fundamental limits under explicit constraints. In practice, this means asking how much a better procedure can achieve with the evidence at hand and when further gains require changing how that evidence is obtained. The answer can guide the design and evaluation of AI systems and their use in scientific investigations. Statistical methods help shape AI systems, and AI in turn raises new statistical problems. We illustrate this relationship with five examples from text watermarking, differential privacy, federated learning, transfer learning, and AI evaluation. Across these examples, what a procedure can achieve depends on how evidence is generated, what can be observed or shared, and which errors matter. We also discuss how AI predictions can guide the choice of measurements and how independent evidence can test the resulting scientific claims.",
           "pdf_url": "/assets/pdf/papers/Statistics_Age_of_AI.pdf"
         },
