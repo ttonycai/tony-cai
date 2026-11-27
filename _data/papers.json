@@ -193,17 +193,6 @@
           "pdf_url": "/assets/pdf/papers/Mixed-Linear-Regression.pdf"
         },
         {
-          "authors": "Cai, T. T., Wang, Y., & Zhang, L. (2024).",
-          "title": "Score attack: A lower bound technique for optimal differentially private learning.",
-          "url": "http://www-stat.wharton.upenn.edu/~tcai/paper/html/Score-Attack.html",
-          "venue": "Technical report.",
-          "id": "score-attack-a-lower-bound-technique-for-optimal-differentially-private-learning",
-          "year": "2024",
-          "topics": ["privacy", "linear-regression"],
-          "abstract": "Achieving optimal statistical performance while ensuring the privacy of personal data is a challenging yet crucial objective in modern data analysis. However, characterizing the optimality, particularly the minimax lower bound, under privacy constraints is technically difficult. To address this issue, we propose a novel approach called the score attack, which provides a lower bound on the differential-privacy-constrained minimax risk of parameter estimation. The score attack method is based on the tracing attack concept in differential privacy and can be applied to any statistical model with a well-defined score statistic. It can optimally lower bound the minimax risk of estimating unknown model parameters, up to a logarithmic factor, while ensuring differential privacy for a range of statistical problems. We demonstrate the effectiveness and optimality of this general method in various examples, such as the generalized linear model in both classical and high-dimensional sparse settings, the Bradley-Terry-Luce model for pairwise comparisons, and nonparametric regression over the Sobolev class.",
-          "pdf_url": "/assets/pdf/papers/Score-Attack.pdf"
-        },
-        {
           "authors": "Chakrabortty, A., Lu, J., Cai, T. T., & Li, H. (2019).",
           "title": "High dimensional M-estimation with missing outcomes: A semi-parametric framework.",
           "url": "http://www-stat.wharton.upenn.edu/~tcai/paper/html/M-Estimation.html",
@@ -233,18 +222,30 @@
       "papers": [
         {
           "cv_number": 1,
+          "authors": "Cai, T. T., Wang, Y., & Zhang, L. (2026+).",
+          "title": "Score attack: A lower bound technique for optimal differentially private learning.",
+          "url": "http://www-stat.wharton.upenn.edu/~tcai/paper/html/Score-Attack.html",
+          "venue": "Technical report.",
+          "id": "score-attack-a-lower-bound-technique-for-optimal-differentially-private-learning",
+          "year": "2026+",
+          "topics": ["privacy", "linear-regression"],
+          "abstract": "Achieving optimal statistical performance while ensuring the privacy of personal data is a challenging yet crucial objective in modern data analysis. However, characterizing the optimality, particularly the minimax lower bound, under privacy constraints is technically difficult. To address this issue, we propose a novel approach called the score attack, which provides a lower bound on the differential-privacy-constrained minimax risk of parameter estimation. The score attack method is based on the tracing attack concept in differential privacy and can be applied to any statistical model with a well-defined score statistic. It can optimally lower bound the minimax risk of estimating unknown model parameters, up to a logarithmic factor, while ensuring differential privacy for a range of statistical problems. We demonstrate the effectiveness and optimality of this general method in various examples, such as the generalized linear model in both classical and high-dimensional sparse settings, the Bradley-Terry-Luce model for pairwise comparisons, and nonparametric regression over the Sobolev class.",
+          "pdf_url": "/assets/pdf/papers/Score-Attack.pdf"
+        },
+        {
+          "cv_number": 2,
           "year": "2026+",
           "authors": "Cai, T. T., Chakraborty, A., & Vuursteen, L. (2026+).",
           "title": "Optimal federated learning for functional mean estimation under heterogeneous privacy constraints.",
           "url": "http://www-stat.wharton.upenn.edu/~tcai/paper/html/FL-Functional-Mean.html",
-          "venue": "Journal of the Royal Statistical Society, Series B.",
+          "venue": "Journal of the Royal Statistical Society, Series B, to appear.",
           "id": "optimal-federated-learning-for-functional-mean-estimation-under-heterogeneous-privacy-constraints",
           "topics": ["privacy", "federated-learning", "fda", "nonparametric-inference"],
           "abstract": "Federated learning (FL) is a distributed machine learning technique designed to preserve data privacy and security, and it has gained significant importance due to its broad range of applications. This paper addresses the problem of optimal functional mean estimation from discretely sampled data in a federated setting. We consider a heterogeneous framework where the number of individuals, measurements per individual, and privacy parameters vary across one or more servers, under both common and independent design settings. In the common design setting, the same design points are measured for each individual, whereas in the independent design setting, each individual has their own random collection of design points. Within this framework, we establish minimax upper and lower bounds for the estimation error of the underlying mean function, highlighting the differences between common and independent designs under distributed privacy constraints. We propose algorithms that achieve the optimal trade-off between privacy and accuracy and provide optimality results that quantify the fundamental limits of private functional mean estimation. We further support the theory with simulations and a real-data illustration using BMI trajectories from the Health and Retirement Study.",
           "pdf_url": "/assets/pdf/papers/FL-Functional-Mean.pdf"
        },
        {
-         "cv_number": 2,
+         "cv_number": 3,
           "authors": "Li, J., Cai, T. T., Xia, D., & Zhang, A. (2026+).",
           "title": "Federated PCA and estimation for spiked covariance matrices: Optimal rates and efficient algorithm.",
           "url": "http://www-stat.wharton.upenn.edu/~tcai/paper/html/FL-PCA.html",
@@ -256,18 +257,18 @@
           "pdf_url": "https://arxiv.org/pdf/2411.15660"
       },
        {
-         "cv_number": 3,
+         "cv_number": 4,
           "year": "2026+",
           "authors": "Cai, T. T., Li, Y., & Yuan, M. (2026+).",
           "title": "Minimax and adaptive covariance function estimation in functional data analysis.",
-          "venue": "Statistica Sinica.",
+          "venue": "Statistica Sinica, to appear.",
           "id": "minimax-and-adaptive-covariance-function-estimation-in-functional-data-analysis",
           "topics": ["fda", "covariance-structures"],
           "abstract": "The covariance function is a central object in functional and longitudinal data analysis, yet its optimal estimation remains challenging because of its bivariate structure and its sensitivity to the sampling design. We study covariance function estimation for functional data under two distinct designs: the common design, in which all curves are observed on a shared grid, and the independent design, in which the sampling locations vary across curves. By exploiting the tensor-product structure of the covariance function, we propose a unified smoothing-spline estimator that applies to both settings. We establish minimax optimal convergence rates for the proposed estimator under both sampling designs and identify several phase transition phenomena. In particular, under the independent design with sparse sampling, the estimator attains a nearly “univariate” minimax rate of \\((nm)^{-2\\alpha/(2\\alpha+1)}\\), up to a logarithmic factor, despite the intrinsically bivariate nature of the covariance function. By contrast, under the common design, the sparse-regime rate is dominated by the discretization error \\(m^{-2\\alpha}\\). We further develop an adaptive implementation based on cross-validation for selecting the smoothing parameter, which does not require prior knowledge of the smoothness parameter \\(\\alpha\\) or the sampling-frequency regime. Numerical experiments on both simulated and real datasets support the theoretical findings and demonstrate the practical effectiveness of the proposed method.",
           "pdf_url": "/assets/pdf/papers/Covariance-Function.pdf"
        },
        {
-         "cv_number": 4,
+         "cv_number": 5,
           "year": "2026+",
           "authors": "Cai, T. T., Kim, D., Li, Y., & Xiang, D. (2026+).",
           "title": "Transfer learning for covariance matrix estimation: Optimality and adaptivity.",
@@ -279,7 +280,7 @@
           "pdf_url": "/assets/pdf/papers/Transfer-Learning-Covariance.pdf"
         },
         {
-          "cv_number": 5,
+          "cv_number": 6,
           "year": "2026+",
           "authors": "Cai, T.T., Chakraborty, A., and Vuursteen, L. (2026+).",
           "title": "Optimal federated learning for nonparametric regression with heterogeneous distributed differential privacy constraints.",
@@ -291,7 +292,7 @@
           "pdf_url": "/assets/pdf/papers/FL-Nonparametric-Regression.pdf"
         },
         {
-          "cv_number": 6,
+          "cv_number": 7,
           "year": "2026+",
           "authors": "Cai, T.T., Chakraborty, A., and Wang, Y. (2026+).",
           "title": "Optimal differentially private ranking from pairwise comparisons.",
@@ -303,7 +304,7 @@
           "pdf_url": "/assets/pdf/papers/Privacy-Ranking.pdf"
         },
         {
-          "cv_number": 7,
+          "cv_number": 8,
           "year": "2026+",
           "authors": "Liang, Z., Cai, T.T., Sun, W., and Xia, Y. (2026).",
           "title": "A locally adaptive algorithm for multiple testing with network structure.",
@@ -315,7 +316,7 @@
           "pdf_url": "/assets/pdf/papers/LASLA.pdf"
         },
         {
-          "cv_number": 8,
+          "cv_number": 9,
           "year": "2026",
           "authors": "Auddy, A., Chakraborty, A., and Cai, T.T. (2026).",
           "title": "Minimax and adaptive transfer learning for nonparametric classification under distributed differential privacy constraints.",
@@ -327,7 +328,7 @@
           "pdf_url": "/assets/pdf/papers/Transfer-Learning-DP-Classification.pdf"
         },
         {
-          "cv_number": 9,
+          "cv_number": 10,
           "year": "2026",
           "authors": "Li, S., Cai, T.T., and Li, H. (2026).",
           "title": "Statistical inference for high dimensional regression with proxy data.",
@@ -339,7 +340,7 @@
           "pdf_url": "/assets/pdf/papers/Proxy-Data-Inference.pdf"
         },
         {
-          "cv_number": 10,
+          "cv_number": 11,
           "year": "2026",
           "authors": "Cai, T.T., Li, S., and Xiang, D. (2026).",
           "title": "Estimation of the unimodal strong stochastic transitivity model and its application in Premier League rankings (in Chinese).",
@@ -350,7 +351,7 @@
           "pdf_url": "https://engine.scichina.com/doi/pdf/78F841E3073E4117AB29F3FBC2BA5CCD"
         },
         {
-          "cv_number": 11,
+          "cv_number": 12,
           "year": "2026",
           "authors": "Chakraborty, A., Auddy, A., and Cai, T.T. (2026).",
           "title": "When data can't meet: Estimating correlation across privacy barriers.",
@@ -368,7 +369,7 @@
       "title": "2025",
       "papers": [
         {
-          "cv_number": 12,
+          "cv_number": 13,
           "year": "2025",
           "authors": "Rakshit, P., Wang, Z., Cai, T.T., and Guo, Z. (2025).",
           "title": "SIHR: Statistical inference in high-dimensional linear and logistic regression models.",
@@ -380,7 +381,7 @@
           "pdf_url": "/assets/pdf/papers/SIHR.pdf"
         },
         {
-          "cv_number": 13,
+          "cv_number": 14,
           "year": "2025",
           "authors": "Tan, J., Zhang, Y., Hong, C., Cai, T.T., Cai, T., and Zhang, A. (2025).",
           "title": "Integrated analysis for electronic health records with structured and sporadic missingness.",
@@ -398,7 +399,7 @@
       "title": "2024",
       "papers": [
         {
-          "cv_number": 14,
+          "cv_number": 15,
           "year": "2024",
           "authors": "Wang, S., Yuan, B., Cai, T.T., and Li, H. (2024).",
           "title": "Phylogenetic association analysis with conditional rank correlation.",
@@ -410,7 +411,7 @@
           "pdf_url": "/assets/pdf/papers/Phylogenetic-Association.pdf"
         },
         {
-          "cv_number": 15,
+          "cv_number": 16,
           "year": "2024",
           "authors": "Cai, T.T., Ke, Z.T., and Turner, P. (2024).",
           "title": "Testing high-dimensional multinomials with applications to text analysis.",
@@ -422,7 +423,7 @@
           "pdf_url": "/assets/pdf/papers/Testing-Multinomials.pdf"
         },
         {
-          "cv_number": 16,
+          "cv_number": 17,
           "year": "2024",
           "authors": "Li, S., Zhang, L., Cai, T.T., and Li, H. (2024).",
           "title": "Estimation and inference for high-dimensional generalized linear models with knowledge transfer.",
@@ -434,7 +435,7 @@
           "pdf_url": "/assets/pdf/papers/Transfer-Learning-GLM.pdf"
         },
         {
-          "cv_number": 17,
+          "cv_number": 18,
           "year": "2024",
           "authors": "Cai, T.T. and Wei, H. (2024).",
           "title": "Distributed Gaussian mean estimation under communication constraints: Optimal rates and communication-efficient algorithms.",
@@ -446,7 +447,7 @@
           "pdf_url": "/assets/pdf/papers/Distributed-Gaussian-Mean-Estimation.pdf"
         },
         {
-          "cv_number": 18,
+          "cv_number": 19,
           "year": "2024",
           "authors": "Cai, T.T., Kim, D., and Pu, H. (2024).",
           "title": "Transfer learning for functional mean estimation: Phase transition and adaptive algorithms.",
@@ -458,7 +459,7 @@
           "pdf_url": "/assets/pdf/papers/Transfer-Learning-Mean-Function.pdf"
         },
         {
-          "cv_number": 19,
+          "cv_number": 20,
           "year": "2024",
           "authors": "Ma, R., Guo, Z., Cai, T.T., and Li, H. (2024).",
           "title": "Statistical inference for genetic relatedness based on high-dimensional logistic regression.",
@@ -470,7 +471,7 @@
           "pdf_url": "/assets/pdf/papers/Genetic-Relatedness.pdf"
         },
         {
-          "cv_number": 20,
+          "cv_number": 21,
           "year": "2024",
           "authors": "Cai, T.T., Chen, R., and Zhu, Y. (2024).",
           "title": "Estimation and inference for minimizer and minimum of convex functions: Optimality, adaptivity, and uncertainty principles.",
@@ -482,7 +483,7 @@
           "pdf_url": "/assets/pdf/papers/Convex-Minimum-Minimizer.pdf"
         },
         {
-          "cv_number": 21,
+          "cv_number": 22,
           "year": "2024",
           "authors": "Cai, C., Cai, T.T., and Li, H. (2024).",
           "title": "Transfer learning for contextual multi-armed bandits.",
@@ -494,7 +495,7 @@
           "pdf_url": "/assets/pdf/papers/Transfer-Learning-Contextual-Bandits.pdf"
         },
         {
-          "cv_number": 22,
+          "cv_number": 23,
           "year": "2024",
           "authors": "Cai, T.T. and Ma, R. (2024).",
           "title": "Matrix reordering for noisy disordered matrices: Optimality and computationally efficient algorithms.",
@@ -513,7 +514,7 @@
       "title": "2023",
       "papers": [
         {
-          "cv_number": 23,
+          "cv_number": 24,
           "year": "2023",
           "authors": "Cai, T.T., Guo, Z., and Xia, Y. (2023).",
           "title": "Statistical inference and large-scale multiple testing for high-dimensional regression models (invited discussion paper).",
@@ -525,7 +526,7 @@
           "pdf_url": "/assets/pdf/papers/GLM-Inference-Survey.pdf"
         },
         {
-          "cv_number": 24,
+          "cv_number": 25,
           "year": "2023",
           "authors": "Li, S., Cai, T.T., and Li, H. (2023).",
           "title": "Transfer learning in large-scale Gaussian graphical models with false discovery rate control.",
@@ -537,7 +538,7 @@
           "pdf_url": "/assets/pdf/papers/Transfer-Learning-GGM.pdf"
         },
         {
-          "cv_number": 25,
+          "cv_number": 26,
           "year": "2023",
           "authors": "Wu, R., Zhang, L., and Cai, T.T. (2023).",
           "title": "Sparse topic modeling: Computational efficiency, near-optimal algorithms, and statistical inference.",
@@ -549,7 +550,7 @@
           "pdf_url": "/assets/pdf/papers/Sparse-Topic-Modeling.pdf"
         },
         {
-          "cv_number": 26,
+          "cv_number": 27,
           "year": "2023",
           "authors": "Xia, Y. and Cai, T.T. (2023).",
           "title": "Discussion of “A Scale-free Approach for False Discovery Rate Control in Generalized Linear Models”.",
@@ -559,7 +560,7 @@
           "topics": ["mcp"]
         },
         {
-          "cv_number": 27,
+          "cv_number": 28,
           "year": "2023",
           "authors": "Cai, T.T., Guo, Z., and Ma, R. (2023).",
           "title": "Statistical inference for high-dimensional generalized linear models with binary outcomes.",
@@ -577,7 +578,7 @@
       "title": "2022",
       "papers": [
         {
-          "cv_number": 28,
+          "cv_number": 29,
           "year": "2022",
           "authors": "Cai, T.T. and Ma, R. (2022).",
           "title": "Theoretical foundations of t-SNE for visualizing high-dimensional clustered data.",
@@ -589,7 +590,7 @@
           "pdf_url": "/assets/pdf/papers/t-SNE.pdf"
         },
         {
-          "cv_number": 29,
+          "cv_number": 30,
           "year": "2022",
           "authors": "Li, S., Cai, T.T., and Li, H. (2022).",
           "title": "Inference for high-dimensional linear mixed-effects models: A quasi-likelihood approach.",
@@ -601,7 +602,7 @@
           "pdf_url": "/assets/pdf/papers/Mixed-Effects.pdf"
         },
         {
-          "cv_number": 30,
+          "cv_number": 31,
           "year": "2022",
           "authors": "Cai, T.T., Zhang, A., and Zhou, Y. (2022).",
           "title": "Sparse group Lasso: Sample complexity, optimal rate, and statistical inference.",
@@ -613,7 +614,7 @@
           "pdf_url": "/assets/pdf/papers/Sparse-Group-Lasso.pdf"
         },
         {
-          "cv_number": 31,
+          "cv_number": 32,
           "year": "2022",
           "authors": "Cai, T.T., Sun, W., and Xia, Y. (2022).",
           "title": "LAWS: A locally adaptive weighting and screening approach to spatial multiple testing.",
@@ -625,7 +626,7 @@
           "pdf_url": "/assets/pdf/papers/LAWS.pdf"
         },
         {
-          "cv_number": 32,
+          "cv_number": 33,
           "year": "2022",
           "authors": "Li, S., Cai, T.T., and Li, H. (2022).",
           "title": "Transfer learning for high-dimensional linear regression: Prediction, estimation, and minimax optimality.",
@@ -637,7 +638,7 @@
           "pdf_url": "/assets/pdf/papers/Transfer-Learning-HDLR.pdf"
         },
         {
-          "cv_number": 33,
+          "cv_number": 34,
           "year": "2022",
           "authors": "Cai, T.T. and Pu, H. (2022).",
           "title": "Stochastic continuum-armed bandits with additive models: Minimax regrets and adaptive algorithm.",
@@ -649,7 +650,7 @@
           "pdf_url": "/assets/pdf/papers/SCAB.pdf"
         },
         {
-          "cv_number": 34,
+          "cv_number": 35,
           "year": "2022",
           "authors": "Cai, T.T. and Wei, H. (2022).",
           "title": "Distributed nonparametric regression: Optimal rate of convergence and cost of adaptation.",
@@ -661,7 +662,7 @@
           "pdf_url": "/assets/pdf/papers/Distributed-Nonparametric-Regression.pdf"
         },
         {
-          "cv_number": 35,
+          "cv_number": 36,
           "year": "2022",
           "authors": "Cai, T.T. and Wei, H. (2022).",
           "title": "Distributed adaptive Gaussian mean estimation with unknown variance: Interactive protocol helps adaptation.",
@@ -673,7 +674,7 @@
           "pdf_url": "/assets/pdf/papers/Distributed-Gaussian-Mean-UnknownVar.pdf"
         },
         {
-          "cv_number": 36,
+          "cv_number": 37,
           "year": "2022",
           "authors": "Kang, H., Lee, Y., Cai, T.T., and Small, D.S. (2022).",
           "title": "Two robust tools for inference about causal effects with invalid instruments.",
@@ -685,7 +686,7 @@
           "pdf_url": "/assets/pdf/papers/Instrumental-Variables-CI.pdf"
         },
         {
-          "cv_number": 37,
+          "cv_number": 38,
           "year": "2022",
           "authors": "Ma, R., Cai, T.T., and Li, H. (2022).",
           "title": "Optimal estimation of simultaneous signals using absolute inner product with applications to integrative genomics.",
@@ -697,7 +698,7 @@
           "pdf_url": "/assets/pdf/papers/Absolute-Inner-Product.pdf"
         },
         {
-          "cv_number": 38,
+          "cv_number": 39,
           "year": "2022",
           "authors": "Cai, T.T., Han, R., and Zhang, A. (2022).",
           "title": "On the non-asymptotic concentration of heteroskedastic Wishart-type matrix.",
@@ -709,7 +710,7 @@
           "abstract": "This paper focuses on the non-asymptotic concentration of the heteroskedastic Wishart-type matrices. Suppose $Z$ is a $p_1$-by-$p_2$ random matrix and $Z_{ij} \\sim N(0,\\sigma_{ij}^2)$ independently, we prove the expected spectral norm of Wishart matrix deviations (i.e., $\\mathbb{E} \\left\\|ZZ^\\top - \\mathbb{E} ZZ^\\top\\right\\|$) is upper bounded by \\[ (1+\\epsilon)\\left\\{2\\sigma_C\\sigma_R + \\sigma_C^2 + C\\sigma_R\\sigma_*\\sqrt{\\log(p_1 \\wedge p_2)} + C\\sigma_*^2\\log(p_1 \\wedge p_2)\\right\\}, \\] where $\\sigma_C^2 := \\max_j \\sum_{i=1}^{p_1}\\sigma_{ij}^2$, $\\sigma_R^2 := \\max_i \\sum_{j=1}^{p_2}\\sigma_{ij}^2$ and $\\sigma_*^2 := \\max_{i,j}\\sigma_{ij}^2$. A minimax lower bound is developed that matches this upper bound. Then, we derive the concentration inequalities, moments, and tail bounds for the heteroskedastic Wishart-type matrix under more general distributions, such as sub-Gaussian and heavy-tailed distributions. Next, we consider the cases where $Z$ has homoskedastic columns or rows (i.e., $\\sigma_{ij} \\approx \\sigma_i$ or $\\sigma_{ij} \\approx \\sigma_j$) and derive the rate-optimal Wishart-type concentration bounds. Finally, we apply the developed tools to identify the sharp signal-to-noise ratio threshold for consistent clustering in the heteroskedastic clustering problem."
         },
         {
-          "cv_number": 39,
+          "cv_number": 40,
           "year": "2022",
           "authors": "Zhang, A., Cai, T.T., and Wu, Y. (2022).",
           "title": "Heteroskedastic PCA: Algorithm, optimality, and applications.",
@@ -727,7 +728,7 @@
       "title": "2021",
       "papers": [
         {
-          "cv_number": 40,
+          "cv_number": 41,
           "year": "2021",
           "authors": "Guo, Z., Renaux, C., Buhlmann, P., and Cai, T.T. (2021).",
           "title": "Group inference in high dimensions with applications to hierarchical testing.",
@@ -739,7 +740,7 @@
           "pdf_url": "/assets/pdf/papers/Group-Inference.pdf"
         },
         {
-          "cv_number": 41,
+          "cv_number": 42,
           "year": "2021",
           "authors": "Cai, T.T., Jiang, T., and Li, X. (2021).",
           "title": "Asymptotic analysis for extreme eigenvalues of principal minors of random matrices.",
@@ -751,7 +752,7 @@
           "pdf_url": "/assets/pdf/papers/Principal-Minors.pdf"
         },
         {
-          "cv_number": 42,
+          "cv_number": 43,
           "year": "2021",
           "authors": "Cai, T.T., Wang, Y., and Zhang, L. (2021).",
           "title": "The cost of privacy: Optimal rates of convergence for parameter estimation with differential privacy.",
@@ -763,7 +764,7 @@
           "pdf_url": "/assets/pdf/papers/Cost-of-Privacy.pdf"
         },
         {
-          "cv_number": 43,
+          "cv_number": 44,
           "year": "2021",
           "authors": "Ma, R., Cai, T.T., and Li, H. (2021).",
           "title": "Optimal estimation of bacterial growth rates based on permuted monotone matrix.",
@@ -775,7 +776,7 @@
           "pdf_url": "/assets/pdf/papers/Extreme-Vectors-Permuted.pdf"
         },
         {
-          "cv_number": 44,
+          "cv_number": 45,
           "year": "2021",
           "authors": "Cai, T., Cai, T.T., and Guo, Z. (2021).",
           "title": "Individualized treatment selection: An optimal hypothesis testing approach in high-dimensional models.",
@@ -787,7 +788,7 @@
           "pdf_url": "/assets/pdf/papers/ITE.pdf"
         },
         {
-          "cv_number": 45,
+          "cv_number": 46,
           "year": "2021",
           "authors": "Ma, R., Cai, T.T., and Li, H. (2021).",
           "title": "Optimal permutation recovery in permuted monotone matrix model.",
@@ -799,7 +800,7 @@
           "pdf_url": "/assets/pdf/papers/Permutation-Recovery.pdf"
         },
         {
-          "cv_number": 46,
+          "cv_number": 47,
           "year": "2021",
           "authors": "Wang, S., Cai, T.T., and Li, H. (2021).",
           "title": "Optimal estimation of Wasserstein distance on a tree with an application to microbiome studies.",
@@ -811,7 +812,7 @@
           "pdf_url": "/assets/pdf/papers/Wasserstein-Distance.pdf"
         },
         {
-          "cv_number": 47,
+          "cv_number": 48,
           "year": "2021",
           "authors": "Cai, T.T. and Zhang, L. (2021).",
           "title": "A convex optimization approach to high-dimensional sparse quadratic discriminant analysis.",
@@ -823,7 +824,7 @@
           "pdf_url": "/assets/pdf/papers/SQDA.pdf"
         },
         {
-          "cv_number": 48,
+          "cv_number": 49,
           "year": "2021",
           "authors": "Wang, S., Cai, T.T., and Li, H. (2021).",
           "title": "Hypothesis testing for phylogenetic composition: A minimum-cost flow perspective.",
@@ -835,7 +836,7 @@
           "pdf_url": "/assets/pdf/papers/Testing-Phylogenetic-Composition.pdf"
         },
         {
-          "cv_number": 49,
+          "cv_number": 50,
           "year": "2021",
           "authors": "Ma, R., Cai, T.T., and Li, H. (2021).",
           "title": "Global and simultaneous testing for high-dimensional logistic regression models.",
@@ -847,7 +848,7 @@
           "pdf_url": "/assets/pdf/papers/Logistic-Testing.pdf"
         },
         {
-          "cv_number": 50,
+          "cv_number": 51,
           "year": "2021",
           "authors": "Cai, T.T., Kim, D., Song, X., and Wang, Y. (2021).",
           "title": "Optimal sparse eigenspace and low-rank density matrix estimation for quantum systems.",
@@ -859,7 +860,7 @@
           "pdf_url": "/assets/pdf/papers/Eigen-Density-Matrix.pdf"
         },
         {
-          "cv_number": 51,
+          "cv_number": 52,
           "year": "2021",
           "authors": "Cai, T.T., Li, H. and Ma, R. (2021).",
           "title": "Optimal structured principal subspace estimation: Metric entropy and minimax rates.",
@@ -871,7 +872,7 @@
           "pdf_url": "/assets/pdf/papers/Structured-PCA-SVD.pdf"
         },
         {
-          "cv_number": 52,
+          "cv_number": 53,
           "year": "2021",
           "authors": "Cai, T.T. and Wei, H. (2021).",
           "title": "Transfer learning for nonparametric classification: Minimax rate and adaptive classifier.",
@@ -889,7 +890,7 @@
       "title": "2020",
       "papers": [
         {
-          "cv_number": 53,
+          "cv_number": 54,
           "year": "2020",
           "authors": "Xia, Y., Cai, T.T., and Sun, W. (2020).",
           "title": "GAP: A general framework for information pooling in two-sample sparse inference.",
@@ -901,7 +902,7 @@
           "pdf_url": "/assets/pdf/papers/GAP.pdf"
         },
         {
-          "cv_number": 54,
+          "cv_number": 55,
           "year": "2020",
           "authors": "Cai, T.T. and Wu, Y. (2020).",
           "title": "Statistical and computational limits for sparse matrix detection.",
@@ -913,7 +914,7 @@
           "pdf_url": "/assets/pdf/papers/Sparse-Matrix-Detection.pdf"
         },
         {
-          "cv_number": 55,
+          "cv_number": 56,
           "year": "2020",
           "authors": "Cai, T.T., Han, X., and Pan, G. (2020).",
           "title": "Limiting laws for divergent spiked eigenvalues and largest non-spiked eigenvalue of sample covariance matrices.",
@@ -925,7 +926,7 @@
           "pdf_url": "/assets/pdf/papers/Spiked-Eigenvalues.pdf"
         },
         {
-          "cv_number": 56,
+          "cv_number": 57,
           "year": "2020",
           "authors": "Cai, T.T. and Guo, Z. (2020).",
           "title": "Semi-supervised inference for explained variance in high-dimensional regression and its applications.",
@@ -937,7 +938,7 @@
           "pdf_url": "/assets/pdf/papers/CHIVE.pdf"
         },
         {
-          "cv_number": 57,
+          "cv_number": 58,
           "year": "2020",
           "authors": "Cai, T.T., Liang, T., and Rakhlin, A. (2020).",
           "title": "Weighted message passing and minimum energy flow for heterogeneous stochastic block models with side information.",
@@ -949,7 +950,7 @@
           "pdf_url": "/assets/pdf/papers/Hetero-SBM.pdf"
         },
         {
-          "cv_number": 58,
+          "cv_number": 59,
           "year": "2020",
           "authors": "Cai, T.T., Hu, J., Li, Y., and Zheng, X. (2020).",
           "title": "High-dimensional minimum variance portfolio estimation based on high-frequency data.",
@@ -967,7 +968,7 @@
       "title": "2019",
       "papers": [
         {
-          "cv_number": 59,
+          "cv_number": 60,
           "year": "2019",
           "authors": "Cai, T.T. (2019).",
           "title": "Gaussianization Machines for non-Gaussian function estimation models.",
@@ -979,7 +980,7 @@
           "pdf_url": "/assets/pdf/papers/Gaussianization.pdf"
         },
         {
-          "cv_number": 60,
+          "cv_number": 61,
           "year": "2019",
           "authors": "Cai, T.T., Li, H., Ma, J., and Xia, Y. (2019).",
           "title": "Differential Markov random field analysis with an application to detecting differential microbial community networks.",
@@ -991,7 +992,7 @@
           "pdf_url": "/assets/pdf/papers/Differential-MRF.pdf"
         },
         {
-          "cv_number": 61,
+          "cv_number": 62,
           "year": "2019",
           "authors": "Xiang, D., Zhao, S. D., and Cai, T.T. (2019).",
           "title": "Signal classification for the integrative analysis of multiple sequences of multiple tests.",
@@ -1003,7 +1004,7 @@
           "pdf_url": "/assets/pdf/papers/Signal-Classification.pdf"
         },
         {
-          "cv_number": 62,
+          "cv_number": 63,
           "year": "2019",
           "authors": "Cai, T.T. and Zhang, L. (2019).",
           "title": "High-dimensional linear discriminant analysis: Optimality, adaptive algorithm, and missing data.",
@@ -1015,7 +1016,7 @@
           "pdf_url": "/assets/pdf/papers/Optimal-LDA.pdf"
         },
         {
-          "cv_number": 63,
+          "cv_number": 64,
           "year": "2019",
           "authors": "Zhang, A., Brown, L.D., and Cai, T.T. (2019).",
           "title": "Semi-supervised inference: General theory and estimation of means.",
@@ -1027,7 +1028,7 @@
           "pdf_url": "/assets/pdf/papers/Semisupervised-Means.pdf"
         },
         {
-          "cv_number": 64,
+          "cv_number": 65,
           "year": "2019",
           "authors": "Guo, Z., Wang, W., Cai, T.T., and Li, H. (2019).",
           "title": "Optimal estimation of genetic relatedness in high-dimensional linear models.",
@@ -1039,7 +1040,7 @@
           "pdf_url": "/assets/pdf/papers/Co-Heritability.pdf"
         },
         {
-          "cv_number": 65,
+          "cv_number": 66,
           "year": "2019",
           "authors": "Cai, T.T., Sun, W., and Wang, W. (2019).",
           "title": "CARS: Covariate assisted ranking and screening for large-scale two-sample inference (with discussion).",
@@ -1051,7 +1052,7 @@
           "pdf_url": "/assets/pdf/papers/CARS.pdf"
         },
         {
-          "cv_number": 66,
+          "cv_number": 67,
           "year": "2019",
           "authors": "Cai, T., Cai, T.T., Liao, K., and Liu, W. (2019).",
           "title": "Large-scale simultaneous testing of cross-covariance matrix with applications to PheWAS.",
@@ -1063,7 +1064,7 @@
           "pdf_url": "/assets/pdf/papers/PheWAS-Multiple-Testing.pdf"
         },
         {
-          "cv_number": 67,
+          "cv_number": 68,
           "year": "2019",
           "authors": "Cai, T.T., Ma, J. and Zhang, L. (2019).",
           "title": "CHIME: Clustering of high-dimensional Gaussian mixtures with EM algorithm and its optimality.",
@@ -1081,7 +1082,7 @@
       "title": "2018",
       "papers": [
         {
-          "cv_number": 68,
+          "cv_number": 69,
           "year": "2018",
           "authors": "Guo, Z., Kang, H., Cai, T.T., and Small, D.S. (2018).",
           "title": "Testing endogeneity with high dimensional covariates.",
@@ -1093,7 +1094,7 @@
           "pdf_url": "/assets/pdf/papers/Testing-Endogeneity.pdf"
         },
         {
-          "cv_number": 69,
+          "cv_number": 70,
           "year": "2018",
           "authors": "Basu, P., Cai, T.T., Das, K., and Sun, W. (2018).",
           "title": "Weighted false discovery rate control in large-scale multiple testing.",
@@ -1105,7 +1106,7 @@
           "pdf_url": "/assets/pdf/papers/wFDR.pdf"
         },
         {
-          "cv_number": 70,
+          "cv_number": 71,
           "year": "2018",
           "authors": "Guo, Z., Kang, H., Cai, T.T., and Small, D.S. (2018).",
           "title": "Confidence intervals for causal effects with invalid instruments using two-stage hard thresholding with voting.",
@@ -1117,7 +1118,7 @@
           "pdf_url": "/assets/pdf/papers/CausalCI.pdf"
         },
         {
-          "cv_number": 71,
+          "cv_number": 72,
           "year": "2018",
           "authors": "Cai, T.T., Zhang, L., and Zhou, H.H. (2018).",
           "title": "Adaptive functional linear regression via functional principal component analysis and block thresholding.",
@@ -1129,7 +1130,7 @@
           "pdf_url": "/assets/pdf/papers/Adaptive-FLR.pdf"
         },
         {
-          "cv_number": 72,
+          "cv_number": 73,
           "year": "2018",
           "authors": "Cai, T.T. and Guo, Z. (2018).",
           "title": "Accuracy assessment for high-dimensional linear regression.",
@@ -1141,7 +1142,7 @@
           "pdf_url": "/assets/pdf/papers/Loss-Estimation.pdf"
         },
         {
-          "cv_number": 73,
+          "cv_number": 74,
           "year": "2018",
           "authors": "Xia, Y., Cai, T.T., and Li, H. (2018).",
           "title": "Joint testing and false discovery rate control for high-dimensional multivariate regression.",
@@ -1153,7 +1154,7 @@
           "pdf_url": "/assets/pdf/papers/FDR-Multi-Regression.pdf"
         },
         {
-          "cv_number": 74,
+          "cv_number": 75,
           "year": "2018",
           "authors": "Xia, Y., Cai, T., and Cai, T.T. (2018).",
           "title": "Multiple testing of submatrices of a precision matrix with applications to identification of between pathway interactions.",
@@ -1165,7 +1166,7 @@
           "pdf_url": "/assets/pdf/papers/Testing-Submatrices-Precision-Matrix.pdf"
         },
         {
-          "cv_number": 75,
+          "cv_number": 76,
           "year": "2018",
           "authors": "Cai, T.T., Guntuboyina, A., and Wei, Y. (2018).",
           "title": "Adaptive estimation of planar convex sets.",
@@ -1177,7 +1178,7 @@
           "pdf_url": "/assets/pdf/papers/Convex-Set-Estimation.pdf"
         },
         {
-          "cv_number": 76,
+          "cv_number": 77,
           "year": "2018",
           "authors": "Cai, T.T. and Zhang, L. (2018).",
           "title": "High-dimensional Gaussian regression: Adaptive estimation and statistical inference.",
@@ -1189,7 +1190,7 @@
           "pdf_url": "/assets/pdf/papers/Copula-Regression.pdf"
         },
         {
-          "cv_number": 77,
+          "cv_number": 78,
           "year": "2018",
           "authors": "Cai, T.T. and Zhang, A. (2018).",
           "title": "Rate-optimal perturbation bounds for singular subspaces with applications to high-dimensional statistics.",
@@ -1201,7 +1202,7 @@
           "pdf_url": "/assets/pdf/papers/Perturbation-Bounds.pdf"
         },
         {
-          "cv_number": 78,
+          "cv_number": 79,
           "year": "2018",
           "authors": "Xia, Y., Cai, T., and Cai, T.T. (2018).",
           "title": "Two-sample tests for high-dimensional linear regression with an application to detecting interactions.",
@@ -1219,7 +1220,7 @@
       "title": "2017",
       "papers": [
         {
-          "cv_number": 79,
+          "cv_number": 80,
           "year": "2017",
           "authors": "Zhao, S. D., Cai, T.T., and Li, H. (2017).",
           "title": "Optimal detection of positive latent dependence between two sequences of multiple tests.",
@@ -1231,7 +1232,7 @@
           "pdf_url": "/assets/pdf/papers/Dependence-Detection.pdf"
         },
         {
-          "cv_number": 80,
+          "cv_number": 81,
           "year": "2017",
           "authors": "Cai, T.T. and Sun, W. (2017).",
           "title": "Large-scale global and simultaneous inference: Estimation and testing in very high dimensions.",
@@ -1243,7 +1244,7 @@
           "pdf_url": "/assets/pdf/papers/Multiple-Testing-Survey-ARE.pdf"
         },
         {
-          "cv_number": 81,
+          "cv_number": 82,
           "year": "2017",
           "authors": "Zhao, S.D., Cai, T.T., Cappola, T.P., Margulies, K.B., and Li, H. (2017).",
           "title": "Sparse simultaneous signal detection for identifying genetically controlled disease genes.",
@@ -1255,7 +1256,7 @@
           "pdf_url": "/assets/pdf/papers/Sparse-Simultaneous-Signal.pdf"
         },
         {
-          "cv_number": 82,
+          "cv_number": 83,
           "year": "2017",
           "authors": "Cai, T.T., Liang, T., and Rakhlin, A. (2017).",
           "title": "On detection and structural reconstruction of small world random networks.",
@@ -1267,7 +1268,7 @@
           "pdf_url": "/assets/pdf/papers/Small-World.pdf"
         },
         {
-          "cv_number": 83,
+          "cv_number": 84,
           "year": "2017",
           "authors": "Cai, T.T., Liang, T., and Rakhlin, A. (2017).",
           "title": "Computational and statistical boundaries for submatrix localization in a large noisy matrix.",
@@ -1279,7 +1280,7 @@
           "pdf_url": "/assets/pdf/papers/Submatrix-Localization.pdf"
         },
         {
-          "cv_number": 84,
+          "cv_number": 85,
           "year": "2017",
           "authors": "Liao, K.P., Sparks, J.A., Hejblum, B., Kuo, I-H., Cui, J., Lahey, L., Cagan, A., Gainer, V.S., Liu, W., Cai, T.T., Sokolove, J., and Cai, T. (2017).",
           "title": "Phenome-wide association study of autoantibodies to citrullinated and non-citrullinated epitopes in rheumatoid arthritis.",
@@ -1291,7 +1292,7 @@
           "pdf_url": "/assets/pdf/papers/PheWAS-Arthritis.pdf"
         },
         {
-          "cv_number": 85,
+          "cv_number": 86,
           "year": "2017",
           "authors": "Cai, T.T. and Guo, Z. (2017).",
           "title": "Confidence intervals for high-dimensional linear regression: Minimax rates and adaptivity.",
@@ -1303,7 +1304,7 @@
           "pdf_url": "/assets/pdf/papers/CI-Linear-Regression.pdf"
         },
         {
-          "cv_number": 86,
+          "cv_number": 87,
           "year": "2017",
           "authors": "Cai, T.T. and Tan, X.L. (2017).",
           "title": "Optimal estimation of a quadratic functional under the Gaussian two-sequence model.",
@@ -1315,7 +1316,7 @@
           "pdf_url": "/assets/pdf/papers/QF-2-Sample.pdf"
         },
         {
-          "cv_number": 87,
+          "cv_number": 88,
           "year": "2017",
           "authors": "Cai, T.T. (2017).",
           "title": "Global testing and large-scale multiple testing for high-dimensional covariance structures.",
@@ -1327,7 +1328,7 @@
           "pdf_url": "/assets/pdf/papers/Testing-Covariance-Survey-ARS.pdf"
         },
         {
-          "cv_number": 88,
+          "cv_number": 89,
           "year": "2017",
           "authors": "Cai, T.T. and Sun, W. (2017).",
           "title": "Optimal screening of sparse signals with applications to multistage high-throughput studies.",
@@ -1345,7 +1346,7 @@
       "title": "2016",
       "papers": [
         {
-          "cv_number": 89,
+          "cv_number": 90,
           "year": "2016",
           "authors": "Cai, T.T. and Zhang, L. (2016).",
           "title": "Discussion of “Influential Feature PCA for High Dimensional Clustering”.",
@@ -1356,7 +1357,7 @@
           "pdf_url": "/assets/pdf/papers/Clustering-Discussion.pdf"
         },
         {
-          "cv_number": 90,
+          "cv_number": 91,
           "year": "2016",
           "authors": "Cai, T.T., Li, X. and Ma, Z. (2016).",
           "title": "Optimal rates of convergence for noisy sparse phase retrieval via thresholded Wirtinger flow.",
@@ -1368,7 +1369,7 @@
           "pdf_url": "/assets/pdf/papers/Sparse-Phase-Retrieval.pdf"
         },
         {
-          "cv_number": 91,
+          "cv_number": 92,
           "year": "2016",
           "authors": "Cai, T., Cai, T.T., and Zhang, A. (2016).",
           "title": "Structured matrix completion with applications to genomic data integration.",
@@ -1380,7 +1381,7 @@
           "pdf_url": "/assets/pdf/papers/Structured-MC.pdf"
         },
         {
-          "cv_number": 92,
+          "cv_number": 93,
           "year": "2016",
           "authors": "Cai, T.T., Liang, T., and Rakhlin, A. (2016).",
           "title": "Geometric inference for general high-dimensional linear inverse problems.",
@@ -1392,7 +1393,7 @@
           "pdf_url": "/assets/pdf/papers/Geometry-Linear-Inverse.pdf"
         },
         {
-          "cv_number": 93,
+          "cv_number": 94,
           "year": "2016",
           "authors": "Cai, T.T. and Zhang, A. (2016).",
           "title": "Minimax rate-optimal estimation of high-dimensional covariance matrices with incomplete data.",
@@ -1404,7 +1405,7 @@
           "pdf_url": "/assets/pdf/papers/Covariance-Incomplete.pdf"
         },
         {
-          "cv_number": 94,
+          "cv_number": 95,
           "year": "2016",
           "authors": "Cai, T.T., Eldar, Y.C., and Li, X. (2016).",
           "title": "Global testing against sparse alternatives in time-frequency analysis.",
@@ -1416,7 +1417,7 @@
           "pdf_url": "/assets/pdf/papers/Testing-Periodicity.pdf"
         },
         {
-          "cv_number": 95,
+          "cv_number": 96,
           "year": "2016",
           "authors": "Cai, T.T. and Zhou, W. (2016).",
           "title": "Matrix completion via max-norm constrained optimization.",
@@ -1428,7 +1429,7 @@
           "pdf_url": "/assets/pdf/papers/Max-Norm-Matrix-Completion.pdf"
         },
         {
-          "cv_number": 96,
+          "cv_number": 97,
           "year": "2016",
           "authors": "Cai, T.T. and Yuan, M. (2016).",
           "title": "Minimax and adaptive estimation of covariance operator for random variables observed on a lattice graph.",
@@ -1440,7 +1441,7 @@
           "pdf_url": "/assets/pdf/papers/Covariance-Lattice.pdf"
         },
         {
-          "cv_number": 97,
+          "cv_number": 98,
           "year": "2016",
           "authors": "Cai, T.T. and Liu, W. (2016).",
           "title": "Large-scale multiple testing of correlations.",
@@ -1452,7 +1453,7 @@
           "pdf_url": "/assets/pdf/papers/FDR-Correlations.pdf"
         },
         {
-          "cv_number": 98,
+          "cv_number": 99,
           "year": "2016",
           "authors": "Kang, H., Zhang, A., Cai, T.T., and Small, D.S. (2016).",
           "title": "Instrumental variables estimation with some invalid instruments and its application to Mendelian randomization.",
@@ -1464,7 +1465,7 @@
           "pdf_url": "/assets/pdf/papers/Instrumental-Variables.pdf"
         },
         {
-          "cv_number": 99,
+          "cv_number": 100,
           "year": "2016",
           "authors": "Cai, T.T., Liu, W., and Zhou, H.H. (2016).",
           "title": "Estimating sparse precision matrix: Optimal rates of convergence and adaptive estimation.",
@@ -1476,7 +1477,7 @@
           "pdf_url": "/assets/pdf/papers/Optimal-Precision-Matrix.pdf"
         },
         {
-          "cv_number": 100,
+          "cv_number": 101,
           "year": "2016",
           "authors": "Cai, T.T., Kim, D., Wang, Y., Yuan, M., and Zhou, H.H. (2016).",
           "title": "Optimal large-scale quantum state tomography with Pauli measurements.",
@@ -1488,7 +1489,7 @@
           "pdf_url": "/assets/pdf/papers/Estimating-Density-Matrix-Pauli.pdf"
         },
         {
-          "cv_number": 101,
+          "cv_number": 102,
           "year": "2016",
           "authors": "Cai, T.T., Li, H., Liu, W., and Xie, J. (2016).",
           "title": "Joint estimation of multiple high-dimensional precision matrices.",
@@ -1500,7 +1501,7 @@
           "pdf_url": "/assets/pdf/papers/Multiple-Precision-Matrices.pdf"
         },
         {
-          "cv_number": 102,
+          "cv_number": 103,
           "year": "2016",
           "authors": "Cai, T.T., Ren, Z., and Zhou, H.H. (2016).",
           "title": "Estimating structured high-dimensional covariance and precision matrices: Optimal rates and adaptive estimation (with discussion).",
@@ -1512,7 +1513,7 @@
           "pdf_url": "/assets/pdf/papers/Covariance-Survey.pdf"
         },
         {
-          "cv_number": 103,
+          "cv_number": 104,
           "year": "2016",
           "authors": "Cai, T.T. and Zhang, A. (2016).",
           "title": "Inference for high-dimensional differential matrices.",
@@ -1530,7 +1531,7 @@
       "title": "2015",
       "papers": [
         {
-          "cv_number": 104,
+          "cv_number": 105,
           "year": "2015",
           "authors": "Liao, K., Sparks, J.A., Hejblum, B., Kuo, I., Cui, J., Lahey, L.J., Cagan, A., Gainer, V., Liu, W., Cai, T.T. and Sokolove, J. (2015).",
           "title": "Phenome-wide association study of novel anti-citrullinated peptide antibodies in rheumatoid arthritis.",
@@ -1541,7 +1542,7 @@
           "abstract": "A phenome-wide association study linked autoantibody measurements with electronic medical records from 1,006 patients with rheumatoid arthritis. The analysis identified 13 autoantibody-phenotype associations at a false discovery rate below 0.1 and suggested a connection between antibodies targeting fibrinogen and chronic inflammatory lung conditions in rheumatoid arthritis."
         },
         {
-          "cv_number": 105,
+          "cv_number": 106,
           "year": "2015",
           "authors": "Cai, T.T. and Li, X. (2015).",
           "title": "Robust and computationally feasible community detection algorithm in the presence of outlier nodes.",
@@ -1553,7 +1554,7 @@
           "pdf_url": "/assets/pdf/papers/Robust-Community-Detection.pdf"
         },
         {
-          "cv_number": 106,
+          "cv_number": 107,
           "year": "2015",
           "authors": "Cai, T.T., Ma, Z., and Wu, Y. (2015).",
           "title": "Optimal estimation and rank detection for sparse spiked covariance matrices.",
@@ -1565,7 +1566,7 @@
           "pdf_url": "/assets/pdf/papers/Spiked-Covariance.pdf"
         },
         {
-          "cv_number": 107,
+          "cv_number": 108,
           "year": "2015",
           "authors": "Xia, Y., Cai, T., and Cai, T.T. (2015).",
           "title": "Testing differential network with applications to detecting gene by gene interactions.",
@@ -1577,7 +1578,7 @@
           "pdf_url": "/assets/pdf/papers/Testing-Differential-Network.pdf"
         },
         {
-          "cv_number": 108,
+          "cv_number": 109,
           "year": "2015",
           "authors": "Cai, T.T. and Low, M.G. (2015).",
           "title": "A framework for estimation of convex functions.",
@@ -1589,7 +1590,7 @@
           "pdf_url": "/assets/pdf/papers/Convex.pdf"
         },
         {
-          "cv_number": 109,
+          "cv_number": 110,
           "year": "2015",
           "authors": "Cai, T.T. and Zhang, A. (2015).",
           "title": "ROP: Matrix recovery via rank-one projections.",
@@ -1601,7 +1602,7 @@
           "pdf_url": "/assets/pdf/papers/ROP.pdf"
         },
         {
-          "cv_number": 110,
+          "cv_number": 111,
           "year": "2015",
           "authors": "Jeng, J., Cai, T.T., and Li, H. (2015).",
           "title": "Sparse segment identifications with applications to DNA copy number variation analysis.",
@@ -1613,7 +1614,7 @@
           "pdf_url": "/assets/pdf/papers/Sparse-Segment-Review.pdf"
         },
         {
-          "cv_number": 111,
+          "cv_number": 112,
           "year": "2015",
           "authors": "Sun, W., Reich, B., Cai, T.T., Guindani, M., and Schwartzman, A. (2015).",
           "title": "False discovery control in large-scale spatial multiple testing.",
@@ -1625,7 +1626,7 @@
           "pdf_url": "/assets/pdf/papers/FDR-Spatial.pdf"
         },
         {
-          "cv_number": 112,
+          "cv_number": 113,
           "year": "2015",
           "authors": "Cai, T.T., Liang, T., and Zhou, H.H. (2015).",
           "title": "Law of log determinant of sample covariance matrix and optimal estimation of differential entropy for high-dimensional Gaussian distributions.",
@@ -1643,7 +1644,7 @@
       "title": "2014 & Earlier",
       "papers": [
         {
-          "cv_number": 113,
+          "cv_number": 114,
           "year": "2014",
           "authors": "Zhao, S.D., Cai, T.T., and Li, H. (2014).",
           "title": "Direct estimation of differential networks.",
@@ -1655,7 +1656,7 @@
           "pdf_url": "/assets/pdf/papers/Estimating-Differential-Networks.pdf"
         },
         {
-          "cv_number": 114,
+          "cv_number": 115,
           "year": "2014",
           "authors": "Zhao, S.D., Cai, T.T., and Li, H. (2014).",
           "title": "More powerful genetic association testing via a new statistical framework for integrative genomics.",
@@ -1667,7 +1668,7 @@
           "pdf_url": "/assets/pdf/papers/Genetic-Association-Test.pdf"
         },
         {
-          "cv_number": 115,
+          "cv_number": 116,
           "year": "2014",
           "authors": "Cai, T.T. and Xia, Y. (2014).",
           "title": "High-dimensional sparse MANOVA.",
@@ -1679,7 +1680,7 @@
           "pdf_url": "/assets/pdf/papers/Sparse-MANOVA.pdf"
         },
         {
-          "cv_number": 116,
+          "cv_number": 117,
           "year": "2014",
           "authors": "Cai, T.T., Low, M.G., and Ma, Z. (2014).",
           "title": "Adaptive confidence bands for nonparametric regression functions.",
@@ -1691,7 +1692,7 @@
           "pdf_url": "/assets/pdf/papers/Adaptive-CBand.pdf"
         },
         {
-          "cv_number": 117,
+          "cv_number": 118,
           "year": "2014",
           "authors": "Cai, T.T. and Zhang, A. (2014).",
           "title": "Sparse representation of a polytope and recovery of sparse signals and low-rank matrices.",
@@ -1703,7 +1704,7 @@
           "pdf_url": "/assets/pdf/papers/Sharp-RIP2.pdf"
         },
         {
-          "cv_number": 118,
+          "cv_number": 119,
           "year": "2014",
           "authors": "Cai, T.T., Liu, W., and Xia, Y. (2014).",
           "title": "Two-sample test of high dimensional means under dependence.",
@@ -1715,7 +1716,7 @@
           "pdf_url": "/assets/pdf/papers/Testing-2-Means.pdf"
         },
         {
-          "cv_number": 119,
+          "cv_number": 120,
           "year": "2014",
           "authors": "Cai, T.T. and Wu, Y. (2014).",
           "title": "Optimal detection for sparse mixtures against a given null distribution.",
@@ -1727,7 +1728,7 @@
           "pdf_url": "/assets/pdf/papers/Sparse-Detection.pdf"
         },
         {
-          "cv_number": 120,
+          "cv_number": 121,
           "year": "2014",
           "authors": "Cai, T.T. and Yuan, M. (2014).",
           "title": "Comments on “A Significance Test for the Lasso”.",
@@ -1738,7 +1739,7 @@
           "pdf_url": "/assets/pdf/papers/Discussion-of-Significant-Test-Lasso.pdf"
         },
         {
-          "cv_number": 121,
+          "cv_number": 122,
           "year": "2013",
           "authors": "Cai, T.T. Ma, Z., and Wu, Y. (2013).",
           "title": "Sparse PCA: Optimal rates and adaptive estimation.",
@@ -1750,7 +1751,7 @@
           "pdf_url": "/assets/pdf/papers/Sparse-PCA.pdf"
         },
         {
-          "cv_number": 122,
+          "cv_number": 123,
           "year": "2013",
           "authors": "Cai, T.T. and Ma, Z. (2013).",
           "title": "Optimal hypothesis testing for high dimensional covariance matrices.",
@@ -1762,7 +1763,7 @@
           "pdf_url": "/assets/pdf/papers/Testing-Covariance-Matrix.pdf"
         },
         {
-          "cv_number": 123,
+          "cv_number": 124,
           "year": "2013",
           "authors": "Cai, T.T. and Zhou, W. (2013).",
           "title": "A max-norm constrained optimization approach to 1-bit matrix completion.",
@@ -1774,7 +1775,7 @@
           "pdf_url": "/assets/pdf/papers/1Bit-Matrix-Completion.pdf"
         },
         {
-          "cv_number": 124,
+          "cv_number": 125,
           "year": "2013",
           "authors": "Cai, T.T. and Zhang, A. (2013).",
           "title": "Compressed sensing and affine rank minimization under restricted isometry.",
@@ -1786,7 +1787,7 @@
           "pdf_url": "/assets/pdf/papers/Optimal-RIC-ROC.pdf"
         },
         {
-          "cv_number": 125,
+          "cv_number": 126,
           "year": "2013",
           "authors": "Cai, T.T., Low, M.G., and Xia, Y. (2013).",
           "title": "Adaptive confidence intervals for regression functions under shape constraints.",
@@ -1798,7 +1799,7 @@
           "pdf_url": "/assets/pdf/papers/CI-Shape-Constraint.pdf"
         },
         {
-          "cv_number": 126,
+          "cv_number": 127,
           "year": "2013",
           "authors": "Cai, T.T., Fan, J., and Jiang, T. (2013).",
           "title": "Distributions of angles in random packing on spheres.",
@@ -1810,7 +1811,7 @@
           "pdf_url": "/assets/pdf/papers/Random-Angles.pdf"
         },
         {
-          "cv_number": 127,
+          "cv_number": 128,
           "year": "2013",
           "authors": "Cai, T.T., Ren, Z., and Zhou, H.H. (2013).",
           "title": "Optimal rates of convergence for estimating Toeplitz covariance matrices.",
@@ -1822,7 +1823,7 @@
           "pdf_url": "/assets/pdf/papers/Toeplitz-Covariance-Matrix.pdf"
         },
         {
-          "cv_number": 128,
+          "cv_number": 129,
           "year": "2013",
           "authors": "Cai, T.T. and Zhang, A. (2013).",
           "title": "Sharp RIP bound for sparse signal and low-rank matrix recovery.",
@@ -1834,7 +1835,7 @@
           "pdf_url": "/assets/pdf/papers/Optimal-RIP.pdf"
         },
         {
-          "cv_number": 129,
+          "cv_number": 130,
           "year": "2013",
           "authors": "Cai, T.T., Ma, Z., and Wu, Y. (2013).",
           "title": "Recent results on sparse principal component analysis.",
@@ -1846,7 +1847,7 @@
           "pdf_url": "/assets/pdf/papers/Sparse-PCA-CAMSAP.pdf"
         },
         {
-          "cv_number": 130,
+          "cv_number": 131,
           "year": "2013",
           "authors": "Jeng, J., Cai, T.T., and Li, H. (2013).",
           "title": "Simultaneous discovery of rare and common segment variants.",
@@ -1858,7 +1859,7 @@
           "pdf_url": "/assets/pdf/papers/Multi-CNV.pdf"
         },
         {
-          "cv_number": 131,
+          "cv_number": 132,
           "year": "2013",
           "authors": "Cai, T.T., Li, H., Liu, W., and Xie, J. (2013).",
           "title": "Covariate adjusted precision matrix estimation with an application in genetical genomics.",
@@ -1870,7 +1871,7 @@
           "pdf_url": "/assets/pdf/papers/CAPME.pdf"
         },
         {
-          "cv_number": 132,
+          "cv_number": 133,
           "year": "2013",
           "authors": "Cai, T.T., Liu, W., and Xia, Y. (2013).",
           "title": "Two-sample covariance matrix testing and support recovery in high-dimensional and sparse settings.",
@@ -1882,7 +1883,7 @@
           "pdf_url": "/assets/pdf/papers/Testing-2-Covariance-Matrices.pdf"
         },
         {
-          "cv_number": 133,
+          "cv_number": 134,
           "year": "2012",
           "authors": "Cai, T.T. and Zhou, H.H. (2012).",
           "title": "Optimal rates of convergence for sparse covariance matrix estimation.",
@@ -1894,7 +1895,7 @@
           "pdf_url": "/assets/pdf/papers/Sparse-Covariance-Matrix.pdf"
         },
         {
-          "cv_number": 134,
+          "cv_number": 135,
           "year": "2012",
           "authors": "Cai, T.T., Jeng, J., and Li, H. (2012).",
           "title": "Robust detection and identification of sparse segments in ultra-high dimensional data analysis.",
@@ -1906,7 +1907,7 @@
           "pdf_url": "/assets/pdf/papers/Robust-Sparse-Segments.pdf"
         },
         {
-          "cv_number": 135,
+          "cv_number": 136,
           "year": "2012",
           "authors": "Cai, T.T. and Zhou, H.H. (2012).",
           "title": "Minimax estimation of large covariance matrices under l1 norm (with discussion).",
@@ -1918,7 +1919,7 @@
           "pdf_url": "/assets/pdf/papers/Covariance-L1.pdf"
         },
         {
-          "cv_number": 136,
+          "cv_number": 137,
           "year": "2012",
           "authors": "Cai, T.T. and Yuan, M. (2012).",
           "title": "Adaptive covariance matrix estimation through block thresholding.",
@@ -1930,7 +1931,7 @@
           "pdf_url": "/assets/pdf/papers/Block-Thresholding-Covariance-Matrix.pdf"
         },
         {
-          "cv_number": 137,
+          "cv_number": 138,
           "year": "2012",
           "authors": "Cai, T.T. and Yuan, M. (2012).",
           "title": "Minimax and adaptive prediction for functional linear regression.",
@@ -1942,7 +1943,7 @@
           "pdf_url": "/assets/pdf/papers/Adaptive-Prediction.pdf"
         },
         {
-          "cv_number": 138,
+          "cv_number": 139,
           "year": "2012",
           "authors": "Cai, T.T. (2012).",
           "title": "Minimax and adaptive inference in nonparametric function estimation.",
@@ -1954,7 +1955,7 @@
           "pdf_url": "/assets/pdf/papers/Adaptive-Minimaxity-StatSci.pdf"
         },
         {
-          "cv_number": 139,
+          "cv_number": 140,
           "year": "2012",
           "authors": "Cai, T.T. and Jiang, T. (2012).",
           "title": "Phase transition in limiting distributions of coherence of high-dimensional random matrices.",
@@ -1966,7 +1967,7 @@
           "pdf_url": "/assets/pdf/papers/Coherence-Phase-Transition.pdf"
         },
         {
-          "cv_number": 140,
+          "cv_number": 141,
           "year": "2011",
           "authors": "Cai, T.T. and Liu, W. (2011).",
           "title": "A direct estimation approach to sparse linear discriminant analysis.",
@@ -1978,7 +1979,7 @@
           "pdf_url": "/assets/pdf/papers/Sparse-LDA-LPD.pdf"
         },
         {
-          "cv_number": 141,
+          "cv_number": 142,
           "year": "2011",
           "authors": "Xie, J., Cai, T.T., Maris, J., and Li, H. (2011).",
           "title": "Optimal false discovery rate control for dependent data.",
@@ -1990,7 +1991,7 @@
           "pdf_url": "/assets/pdf/papers/Dependent-FDR.pdf"
         },
         {
-          "cv_number": 142,
+          "cv_number": 143,
           "year": "2011",
           "authors": "Cai, T.T. and Yuan, M. (2011).",
           "title": "Optimal estimation of the mean function based on discretely sampled functional data: Phase transition.",
@@ -2002,7 +2003,7 @@
           "pdf_url": "/assets/pdf/papers/Estimating-Mean-Function.pdf"
         },
         {
-          "cv_number": 143,
+          "cv_number": 144,
           "year": "2011",
           "authors": "Cai, T.T. and Jiang, T. (2011).",
           "title": "Limiting laws of coherence of random matrices with applications to testing covariance structure and construction of compressed sensing matrices.",
@@ -2014,7 +2015,7 @@
           "pdf_url": "/assets/pdf/papers/Coherence-Random-Matrix.pdf"
         },
         {
-          "cv_number": 144,
+          "cv_number": 145,
           "year": "2011",
           "authors": "Cai, T.T., Jeng, J., and Jin, J. (2011).",
           "title": "Optimal detection of heterogeneous and heteroscedastic mixtures.",
@@ -2026,7 +2027,7 @@
           "pdf_url": "/assets/pdf/papers/Detection.pdf"
         },
         {
-          "cv_number": 145,
+          "cv_number": 146,
           "year": "2011",
           "authors": "Cai, T.T. and Wang, L. (2011).",
           "title": "Orthogonal matching pursuit for sparse signal recovery with noise.",
@@ -2038,7 +2039,7 @@
           "pdf_url": "/assets/pdf/papers/OMP.pdf"
         },
         {
-          "cv_number": 146,
+          "cv_number": 147,
           "year": "2011",
           "authors": "Cai, T.T. and Liu, W. (2011).",
           "title": "Adaptive thresholding for sparse covariance matrix estimation.",
@@ -2050,7 +2051,7 @@
           "pdf_url": "/assets/pdf/papers/Adaptive-Thresholding-Sparse-Covariance.pdf"
         },
         {
-          "cv_number": 147,
+          "cv_number": 148,
           "year": "2011",
           "authors": "Cai, T.T., Liu, W., and Luo, X. (2011).",
           "title": "A constrained l1 minimization approach to sparse precision matrix estimation.",
@@ -2062,7 +2063,7 @@
           "pdf_url": "/assets/pdf/papers/Precision-Matrix.pdf"
         },
         {
-          "cv_number": 148,
+          "cv_number": 149,
           "year": "2011",
           "authors": "Wang, L., Brown, L.D., and Cai, T.T. (2011).",
           "title": "A difference-based approach to semiparametric partial linear model.",
@@ -2074,7 +2075,7 @@
           "pdf_url": "/assets/pdf/papers/Semiparametric.pdf"
         },
         {
-          "cv_number": 149,
+          "cv_number": 150,
           "year": "2011",
           "authors": "Xie, J., Cai, T.T., and Li, H. (2011).",
           "title": "Sample size and power analysis for sparse signal recovery in genome-wide association studies.",
@@ -2086,7 +2087,7 @@
           "pdf_url": "/assets/pdf/papers/SparseSNP.pdf"
         },
         {
-          "cv_number": 150,
+          "cv_number": 151,
           "year": "2011",
           "authors": "Cai, T.T. and Low, M.G. (2011).",
           "title": "Testing composite hypotheses, Hermite polynomials, and optimal estimation of a nonsmooth functional.",
@@ -2098,7 +2099,7 @@
           "pdf_url": "/assets/pdf/papers/NonsmoothFunctional.pdf"
         },
         {
-          "cv_number": 151,
+          "cv_number": 152,
           "year": "2010",
           "authors": "Jeng, J., Cai, T.T., and Li, H. (2010).",
           "title": "Optimal sparse segment identification with application in copy number variation analysis.",
@@ -2110,7 +2111,7 @@
           "pdf_url": "/assets/pdf/papers/OptLRS.pdf"
         },
         {
-          "cv_number": 152,
+          "cv_number": 153,
           "year": "2010",
           "authors": "Cai, T.T. and Zhou, H.H. (2010).",
           "title": "Nonparametric regression in natural exponential families.",
@@ -2122,7 +2123,7 @@
           "pdf_url": "/assets/pdf/papers/General-Exp-Regression.pdf"
         },
         {
-          "cv_number": 153,
+          "cv_number": 154,
           "year": "2010",
           "authors": "Cai, T.T., Wang, L., and Xu, G. (2010).",
           "title": "New bounds for restricted isometry constants.",
@@ -2134,7 +2135,7 @@
           "pdf_url": "/assets/pdf/papers/NewRIPBounds.pdf"
         },
         {
-          "cv_number": 154,
+          "cv_number": 155,
           "year": "2010",
           "authors": "Cai, T.T. and Sun, W. (2010).",
           "title": "A compound decision-theoretic approach to large-scale multiple testing.",
@@ -2146,7 +2147,7 @@
           "pdf_url": "/assets/pdf/papers/FDR-Review.pdf"
         },
         {
-          "cv_number": 155,
+          "cv_number": 156,
           "year": "2010",
           "authors": "Yuan, M. and Cai, T.T. (2010).",
           "title": "A reproducing kernel Hilbert space approach to functional linear regression.",
@@ -2158,7 +2159,7 @@
           "pdf_url": "/assets/pdf/papers/FLR-RKHS.pdf"
         },
         {
-          "cv_number": 156,
+          "cv_number": 157,
           "year": "2010",
           "authors": "Cai, T.T., Wang, L., and Xu, G. (2010).",
           "title": "Stable recovery of sparse signals and an oracle inequality.",
@@ -2170,7 +2171,7 @@
           "pdf_url": "/assets/pdf/papers/Stable-Recovery-MIP.pdf"
         },
         {
-          "cv_number": 157,
+          "cv_number": 158,
           "year": "2010",
           "authors": "Cai, T.T., Munk, A., and Schmidt-Hieber, J. (2010).",
           "title": "Sharp minimax estimation of the variance of Brownian motion corrupted with Gaussian noise.",
@@ -2182,7 +2183,7 @@
           "pdf_url": "/assets/pdf/papers/Variance-Brownian-Motion.pdf"
         },
         {
-          "cv_number": 158,
+          "cv_number": 159,
           "year": "2010",
           "authors": "Cai, T.T. (2010).",
           "title": "Comments on \"Correlated z-values and the Accuracy of Large-Scale Statistical Estimates\" by Bradley Efron.",
@@ -2193,7 +2194,7 @@
           "pdf_url": "/assets/pdf/papers/Discussion-of-Efron-JASA.pdf"
         },
         {
-          "cv_number": 159,
+          "cv_number": 160,
           "year": "2010",
           "authors": "Cai, T.T., Zhang, C.-H., and Zhou, H.H. (2010).",
           "title": "Optimal rates of convergence for covariance matrix estimation.",
@@ -2205,7 +2206,7 @@
           "pdf_url": "/assets/pdf/papers/Covariance-Minimax.pdf"
         },
         {
-          "cv_number": 160,
+          "cv_number": 161,
           "year": "2010",
           "authors": "Brown, L.D., Cai, T.T., and Zhou, H.H. (2010).",
           "title": "Nonparametric regression in exponential families.",
@@ -2217,7 +2218,7 @@
           "pdf_url": "/assets/pdf/papers/VST-Exp-Regression.pdf"
         },
         {
-          "cv_number": 161,
+          "cv_number": 162,
           "year": "2010",
           "authors": "Brown, L.D., Cai, T.T., Zhang, R., Zhao, L., and Zhou, H.H. (2010).",
           "title": "The root-unroot algorithm for density estimation as implemented via wavelet block thresholding.",
@@ -2229,7 +2230,7 @@
           "pdf_url": "/assets/pdf/papers/Density-Root-Unroot.pdf"
         },
         {
-          "cv_number": 162,
+          "cv_number": 163,
           "year": "2010",
           "authors": "Cai, T.T., Wang, L., and Xu, G. (2010).",
           "title": "Shifting Inequality and recovery of sparse signals.",
@@ -2241,7 +2242,7 @@
           "pdf_url": "/assets/pdf/papers/Shifting-Inequality-Stable-Recovery.pdf"
         },
         {
-          "cv_number": 163,
+          "cv_number": 164,
           "year": "2010",
           "authors": "Cai, T.T. and Jin, J. (2010).",
           "title": "Optimal rates of convergence for estimating the null and proportion of non-null effects in large-scale multiple testing.",
@@ -2253,7 +2254,7 @@
           "pdf_url": "/assets/pdf/papers/Null-Optimal-Rate.pdf"
         },
         {
-          "cv_number": 164,
+          "cv_number": 165,
           "year": "2009",
           "authors": "Cai, T.T., Low, M.G., and Zhao, L.H. (2009).",
           "title": "Sharp adaptive estimation by a blockwise method.",
@@ -2265,7 +2266,7 @@
           "pdf_url": "https://faculty.wharton.upenn.edu/wp-content/uploads/2012/04/SharpAdaptiveEstimation.pdf"
         },
         {
-          "cv_number": 165,
+          "cv_number": 166,
           "year": "2009",
           "authors": "Cai, T.T. and Sun, W. (2009).",
           "title": "Simultaneous testing of grouped hypotheses: Finding needles in multiple haystacks.",
@@ -2277,7 +2278,7 @@
           "pdf_url": "/assets/pdf/papers/FDR-MultiGroup.pdf"
         },
         {
-          "cv_number": 166,
+          "cv_number": 167,
           "year": "2009",
           "authors": "Cai, T.T. and Zhou, H.H. (2009).",
           "title": "Asymptotic equivalence and adaptive estimation for robust nonparametric regression.",
@@ -2289,7 +2290,7 @@
           "pdf_url": "/assets/pdf/papers/Equivalence-Robust-Regression.pdf"
         },
         {
-          "cv_number": 167,
+          "cv_number": 168,
           "year": "2009",
           "authors": "Cai, T.T. and Wang, H. (2009).",
           "title": "Probability matching tolerance intervals for distributions in exponential families.",
@@ -2301,7 +2302,7 @@
           "pdf_url": "/assets/pdf/papers/Tolerance-Interval.pdf"
         },
         {
-          "cv_number": 168,
+          "cv_number": 169,
           "year": "2009",
           "authors": "Cai, T.T., Xu, G., and Zhang, J. (2009).",
           "title": "On recovery of sparse signals via l1 minimization.",
@@ -2313,7 +2314,7 @@
           "pdf_url": "/assets/pdf/papers/Sparse-Recovery.pdf"
         },
         {
-          "cv_number": 169,
+          "cv_number": 170,
           "year": "2009",
           "authors": "Cai, T.T. and Zhou, H.H. (2009).",
           "title": "A data-driven block thresholding approach to wavelet estimation.",
@@ -2325,7 +2326,7 @@
           "pdf_url": "/assets/pdf/papers/SureBlock.pdf"
         },
         {
-          "cv_number": 170,
+          "cv_number": 171,
           "year": "2009",
           "authors": "Cai, T.T., Levine, M., and Wang, L. (2009).",
           "title": "Variance function estimation in multivariate nonparametric regression.",
@@ -2337,7 +2338,7 @@
           "pdf_url": "/assets/pdf/papers/Variance-Estimation-multi-d.pdf"
         },
         {
-          "cv_number": 171,
+          "cv_number": 172,
           "year": "2009",
           "authors": "Sun, W. and Cai, T.T. (2009).",
           "title": "Large-scale multiple testing under dependency.",
@@ -2349,7 +2350,7 @@
           "pdf_url": "/assets/pdf/papers/FDR-HMM.pdf"
         },
         {
-          "cv_number": 172,
+          "cv_number": 173,
           "year": "2008",
           "authors": "Cai, T.T. and Wang, L. (2008).",
           "title": "Adaptive variance function estimation in heteroscedastic nonparametric regression.",
@@ -2361,7 +2362,7 @@
           "pdf_url": "/assets/pdf/papers/Variance-Adaptive.pdf"
         },
         {
-          "cv_number": 173,
+          "cv_number": 174,
           "year": "2008",
           "authors": "Brown, L.D., Cai, T.T., and Zhou, H.H. (2008).",
           "title": "Robust nonparametric estimation via wavelet median regression.",
@@ -2373,7 +2374,7 @@
           "pdf_url": "/assets/pdf/papers/Robust-Regression.pdf"
         },
         {
-          "cv_number": 174,
+          "cv_number": 175,
           "year": "2008",
           "authors": "Wang, L., Brown, L.D., Cai, T.T., and Levine, M. (2008).",
           "title": "Effect of mean on variance function estimation in nonparametric regression.",
@@ -2385,7 +2386,7 @@
           "pdf_url": "/assets/pdf/papers/Variance-Estimation.pdf"
         },
         {
-          "cv_number": 175,
+          "cv_number": 176,
           "year": "2008",
           "authors": "Cai, T.T. (2008).",
           "title": "Discussion of “Microarrays, empirical Bayes, and the two-groups model” by Bradley Efron.",
@@ -2396,7 +2397,7 @@
           "pdf_url": "/assets/pdf/papers/Discussion-of-Efron.pdf"
         },
         {
-          "cv_number": 176,
+          "cv_number": 177,
           "year": "2008",
           "authors": "Cai, T.T. (2008).",
           "title": "On information pooling, adaptability and superefficiency in nonparametric function estimation.",
@@ -2408,7 +2409,7 @@
           "pdf_url": "/assets/pdf/papers/Information-Pooling.pdf"
         },
         {
-          "cv_number": 177,
+          "cv_number": 178,
           "year": "2007",
           "authors": "Sun, W. and Cai, T.T. (2007).",
           "title": "Oracle and adaptive compound decision rules for false discovery rate control.",
@@ -2420,7 +2421,7 @@
           "pdf_url": "/assets/pdf/papers/FDR.pdf"
         },
         {
-          "cv_number": 178,
+          "cv_number": 179,
           "year": "2007",
           "authors": "Jin, J. and Cai, T.T. (2007).",
           "title": "Estimating the null and the proportion of non-null effects in large-scale multiple comparisons.",
@@ -2432,7 +2433,7 @@
           "pdf_url": "/assets/pdf/papers/Estimating-Null-Distribution.pdf"
         },
         {
-          "cv_number": 179,
+          "cv_number": 180,
           "year": "2007",
           "authors": "Cai, T.T., Low, M.G., and Zhao, L. H. (2007).",
           "title": "Tradeoffs between global and local risks in nonparametric function estimation.",
@@ -2444,7 +2445,7 @@
           "pdf_url": "/assets/pdf/papers/Tradeoff.pdf"
         },
         {
-          "cv_number": 180,
+          "cv_number": 181,
           "year": "2007",
           "authors": "Cai, T.T. and Lv, J. (2007).",
           "title": "Discussion of “The Dantzig Selector: Statistical estimation when p is much larger than n” by Candes and Tao.",
@@ -2455,7 +2456,7 @@
           "pdf_url": "/assets/pdf/papers/Discussion-of-Candes-Tao.pdf"
         },
         {
-          "cv_number": 181,
+          "cv_number": 182,
           "year": "2007",
           "authors": "Cai, T.T., Jin, J., and Low, M.G. (2007).",
           "title": "Estimation and confidence sets for sparse normal mixtures.",
@@ -2467,7 +2468,7 @@
           "pdf_url": "/assets/pdf/papers/Estimating-Fraction-of-Signals.pdf"
         },
         {
-          "cv_number": 182,
+          "cv_number": 183,
           "year": "2006",
           "authors": "Cai, T.T. and Low, M.G. (2006).",
           "title": "Optimal adaptive estimation of a quadratic functional.",
@@ -2479,7 +2480,7 @@
           "pdf_url": "/assets/pdf/papers/QF-Adapt.pdf"
         },
         {
-          "cv_number": 183,
+          "cv_number": 184,
           "year": "2006",
           "authors": "Cai, T.T. and Hall, P. (2006).",
           "title": "Prediction in functional linear regression.",
@@ -2491,7 +2492,7 @@
           "pdf_url": "/assets/pdf/papers/Prediction-FLR.pdf"
         },
         {
-          "cv_number": 184,
+          "cv_number": 185,
           "year": "2006",
           "authors": "Cai, T.T. and Low, M.G. (2006).",
           "title": "Adaptive confidence balls.",
@@ -2503,7 +2504,7 @@
           "pdf_url": "/assets/pdf/papers/Adaptive-CBall.pdf"
         },
         {
-          "cv_number": 185,
+          "cv_number": 186,
           "year": "2006",
           "authors": "Cai, T.T. and Low, M.G. (2006).",
           "title": "Adaptation under probabilistic error for estimating linear functionals.",
@@ -2515,7 +2516,7 @@
           "pdf_url": "/assets/pdf/papers/Adapt-PE.pdf"
         },
         {
-          "cv_number": 186,
+          "cv_number": 187,
           "year": "2005",
           "authors": "Cai, T.T. and Low, M.G. (2005).",
           "title": "Non-quadratic estimators of a quadratic functional.",
@@ -2527,7 +2528,7 @@
           "pdf_url": "/assets/pdf/papers/QF-Minimax.pdf"
         },
         {
-          "cv_number": 187,
+          "cv_number": 188,
           "year": "2005",
           "authors": "Cai, T.T. and Low, M.G. (2005).",
           "title": "On adaptive estimation of linear functionals.",
@@ -2539,7 +2540,7 @@
           "pdf_url": "/assets/pdf/papers/Modulus-Adapt-Final.pdf"
         },
         {
-          "cv_number": 188,
+          "cv_number": 189,
           "year": "2005",
           "authors": "Cai, T.T. and Low, M.G. (2005).",
           "title": "Nonparametric function estimation over shrinking neighborhoods: Superefficiency and adaptation.",
@@ -2551,7 +2552,7 @@
           "pdf_url": "/assets/pdf/papers/Shrinking-nbhd.pdf"
         },
         {
-          "cv_number": 189,
+          "cv_number": 190,
           "year": "2005",
           "authors": "Brown, L.D., Cai, T.T., and DasGupta, A. (2005).",
           "title": "Discussion of “Fuzzy And Randomized Confidence Intervals And P-values'' by Geyer and Meeden.",
@@ -2562,7 +2563,7 @@
           "pdf_url": "/assets/pdf/papers/Discussion-on-FuzzyCI.pdf"
         },
         {
-          "cv_number": 190,
+          "cv_number": 191,
           "year": "2005",
           "authors": "Cai, T.T. and Low, M.G. (2005).",
           "title": "Adaptive estimation of linear functionals under different performance measures.",
@@ -2574,7 +2575,7 @@
           "pdf_url": "/assets/pdf/papers/MSE-PE-CI.pdf"
         },
         {
-          "cv_number": 191,
+          "cv_number": 192,
           "year": "2005",
           "authors": "Chicken, E. and Cai, T.T. (2005).",
           "title": "Block thresholding for density estimation: Local and global adaptivity.",
@@ -2586,7 +2587,7 @@
           "pdf_url": "/assets/pdf/papers/Density-Estimation.pdf"
         },
         {
-          "cv_number": 192,
+          "cv_number": 193,
           "year": "2005",
           "authors": "Cai, T.T. (2005).",
           "title": "One-sided confidence intervals in discrete distributions.",
@@ -2598,7 +2599,7 @@
           "pdf_url": "/assets/pdf/papers/1sidedCI.pdf"
         },
         {
-          "cv_number": 193,
+          "cv_number": 194,
           "year": "2004",
           "authors": "Cai, T.T. and Low, M.G. (2004).",
           "title": "An adaptation theory for nonparametric confidence intervals.",
@@ -2610,7 +2611,7 @@
           "pdf_url": "/assets/pdf/papers/AdaptiveCI.pdf"
         },
         {
-          "cv_number": 194,
+          "cv_number": 195,
           "year": "2004",
           "authors": "Cai, T.T. and Low, M.G. (2004).",
           "title": "Minimax estimation of linear functionals over nonconvex parameter spaces.",
@@ -2622,7 +2623,7 @@
           "pdf_url": "/assets/pdf/papers/Minimax.pdf"
         },
         {
-          "cv_number": 195,
+          "cv_number": 196,
           "year": "2003",
           "authors": "Cai, T.T. (2003).",
           "title": "Rates of convergence and adaptation over Besov spaces under pointwise risk.",
@@ -2634,7 +2635,7 @@
           "pdf_url": "/assets/pdf/papers/Besov-Pointwise-Rates.pdf"
         },
         {
-          "cv_number": 196,
+          "cv_number": 197,
           "year": "2003",
           "authors": "Cai, T.T. and Low, M.G. (2003).",
           "title": "A note on nonparametric estimation of linear functionals.",
@@ -2646,7 +2647,7 @@
           "pdf_url": "/assets/pdf/papers/Linear-Functionals.pdf"
         },
         {
-          "cv_number": 197,
+          "cv_number": 198,
           "year": "2003",
           "authors": "Brown, L.D., Cai, T.T., and DasGupta, A. (2003).",
           "title": "Interval estimation in exponential families.",
@@ -2658,7 +2659,7 @@
           "pdf_url": "/assets/pdf/papers/Exp-CI.pdf"
         },
         {
-          "cv_number": 198,
+          "cv_number": 199,
           "year": "2002",
           "authors": "Brown, L.D., Cai, T.T., Low, M.G., and Zhang, C-H. (2002).",
           "title": "Asymptotic equivalence theory for nonparametric regression with random design.",
@@ -2670,7 +2671,7 @@
           "pdf_url": "/assets/pdf/papers/Equivalence.pdf"
         },
         {
-          "cv_number": 199,
+          "cv_number": 200,
           "year": "2002",
           "authors": "Cai, T.T. (2002).",
           "title": "On adaptive estimation of a derivative and other related linear inverse problems.",
@@ -2682,7 +2683,7 @@
           "pdf_url": "/assets/pdf/papers/BlockInverse.pdf"
         },
         {
-          "cv_number": 200,
+          "cv_number": 201,
           "year": "2002",
           "authors": "Cai, T.T. (2002).",
           "title": "On block thresholding in wavelet regression: adaptivity, block size, and threshold level.",
@@ -2694,7 +2695,7 @@
           "pdf_url": "/assets/pdf/papers/Blockthresh.pdf"
         },
         {
-          "cv_number": 201,
+          "cv_number": 202,
           "year": "2002",
           "authors": "Brown, L.D., Cai, T.T., and DasGupta, A. (2002).",
           "title": "Confidence intervals for a binomial proportion and asymptotic expansions.",
@@ -2706,7 +2707,7 @@
           "pdf_url": "/assets/pdf/papers/Binomial-Annals.pdf"
         },
         {
-          "cv_number": 202,
+          "cv_number": 203,
           "year": "2001",
           "authors": "Cai, T.T. and Silverman, B.W. (2001).",
           "title": "Incorporating information on neighboring coefficients into wavelet estimation.",
@@ -2718,7 +2719,7 @@
           "pdf_url": "/assets/pdf/papers/neighblock.pdf"
         },
         {
-          "cv_number": 203,
+          "cv_number": 204,
           "year": "2001",
           "authors": "Cai, T.T. (2001).",
           "title": "Discussion of “Regularization of Wavelets Approximations” by A. Antoniadis and J. Fan.",
@@ -2729,7 +2730,7 @@
           "pdf_url": "/assets/pdf/papers/jasa-discussion.pdf"
         },
         {
-          "cv_number": 204,
+          "cv_number": 205,
           "year": "2001",
           "authors": "Cai, T.T., Zhang, D., and Ben-Amotz, D. (2001).",
           "title": "Enhanced chemical classification of Raman images with wavelet transformation.",
@@ -2741,7 +2742,7 @@
           "pdf_url": "/assets/pdf/papers/Chemical-Classification.pdf"
         },
         {
-          "cv_number": 205,
+          "cv_number": 206,
           "year": "2001",
           "authors": "Brown, L.D., Cai, T.T., and DasGupta, A. (2001).",
           "title": "Interval estimation for a binomial proportion (with discussion).",
@@ -2753,7 +2754,7 @@
           "pdf_url": "/assets/pdf/papers/Binomial-StatSci.pdf"
         },
         {
-          "cv_number": 206,
+          "cv_number": 207,
           "year": "1999",
           "authors": "Cai, T.T. and Brown, L.D. (1999).",
           "title": "Wavelet regression for random uniform design.",
@@ -2765,7 +2766,7 @@
           "pdf_url": "/assets/pdf/papers/Unif-Paper.pdf"
         },
         {
-          "cv_number": 207,
+          "cv_number": 208,
           "year": "1999",
           "authors": "Shyu, C-R., Cai, T.T., and Broderick, L.S. (1999).",
           "title": "On archiving and retrieval of sequential images from tomographic databases in PACS.",
@@ -2777,7 +2778,7 @@
           "pdf_url": "/assets/pdf/papers/SPIE.pdf"
         },
         {
-          "cv_number": 208,
+          "cv_number": 209,
           "year": "1999",
           "authors": "Cai, T.T. (1999).",
           "title": "Adaptive wavelet estimation: a block thresholding and oracle inequality approach.",
@@ -2789,7 +2790,7 @@
           "pdf_url": "/assets/pdf/papers/Block-Oracle.pdf"
         },
         {
-          "cv_number": 209,
+          "cv_number": 210,
           "year": "1998",
           "authors": "Cai, T.T. and Brown, L.D. (1998).",
           "title": "Wavelet shrinkage for nonequispaced samples.",
