@@ -225,7 +225,7 @@
           "authors": "Cai, T. T., Wang, Y., & Zhang, L. (2026+).",
           "title": "Score attack: A lower bound technique for optimal differentially private learning.",
           "url": "http://www-stat.wharton.upenn.edu/~tcai/paper/html/Score-Attack.html",
-          "venue": "Technical report.",
+          "venue": "The Annals of Statistics, to appear.",
           "id": "score-attack-a-lower-bound-technique-for-optimal-differentially-private-learning",
           "year": "2026+",
           "topics": ["privacy", "linear-regression"],
