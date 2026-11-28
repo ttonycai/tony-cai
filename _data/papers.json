@@ -19,7 +19,17 @@
           "topics": ["applications"],
           "abstract": "Artificial intelligence (AI) is fundamentally transforming how data are generated, models are built, and scientific discoveries are made. These transformations make statistical decision theory an indispensable framework for evaluating procedures, assessing their consequences, and identifying fundamental limits under explicit constraints. In practice, this means asking how much a better procedure can achieve with the evidence at hand and when further gains require changing how that evidence is obtained. The answer can guide the design and evaluation of AI systems and their use in scientific investigations. Statistical methods help shape AI systems, and AI in turn raises new statistical problems. We illustrate this relationship with five examples from text watermarking, differential privacy, federated learning, transfer learning, and AI evaluation. Across these examples, what a procedure can achieve depends on how evidence is generated, what can be observed or shared, and which errors matter. We also discuss how AI predictions can guide the choice of measurements and how independent evidence can test the resulting scientific claims.",
           "pdf_url": "/assets/pdf/papers/Statistics_Age_of_AI.pdf"
-        },
+        }, 
+        {
+          "authors": "Cai, T. T. & Li, Y. (2026).",
+          "title": "Exact asymptotic efficiency under differential privacy.",
+          "venue": "Technical Report.",
+          "id": "efficiency-DP",
+          "year": "2026",
+          "topics": ["privacy"],
+          "abstract": "Differential privacy changes both how precisely a population quantity can be estimated and which statistic is best to release. We determine exact local asymptotic minimax constants for differentiable targets in regular, fixed-dimensional models under quadratic loss and pure or approximate central differential privacy with vanishing privacy parameters. We derive a limiting privacy profile that compares release laws even for perturbations outside the sampling model. When privacy dominates, the exact scalar constant over all private estimators is the squared total variation modulus times an explicit optimal noise variance. The same modulus determines the minimum sensitivity for matching the target to first order, and the corresponding noisy average attains the bound. At a fixed privacy scale, the leading constant can vary with the balance between the multiplicative and additive privacy terms. When sampling and privacy errors are comparable, we characterize the exact constant through Gaussian count experiments. Privacy-preserving reconstruction from cell labels transfers the count lower bound to all private estimators, and calibrated count releases attain it. We recover the Fisher information bound when sampling dominates and give closed forms for bounded means, categorical contrasts, and joint stratified binary rates.",
+          "pdf_url": "/assets/pdf/papers/Efficiency-DP.pdf"
+         },
         {
           "authors": "Cai, T. T., Chakraborty, A., & Kpotufe, S. (2026).",
           "title": "The geometry of multitask learning: Sharp rates for shared subspace estimation.",
@@ -33,13 +43,13 @@
         },
         {
           "authors": "Cai, T. T. & Li, Y. (2026).",
-          "title": "Exact asymptotic efficiency under differential privacy.",
+          "title": "Exact asymptotic efficiency under zCDP: Diameter-constrained information geometry.",
           "venue": "Technical Report.",
-          "id": "efficiency-DP",
+          "id": "efficiency-zCDP",
           "year": "2026",
           "topics": ["privacy"],
-          "abstract": "Differential privacy changes both how precisely a population quantity can be estimated and which statistic is best to release. We determine exact local asymptotic minimax constants for differentiable targets in regular, fixed-dimensional models under quadratic loss and pure or approximate central differential privacy with vanishing privacy parameters. We derive a limiting privacy profile that compares release laws even for perturbations outside the sampling model. When privacy dominates, the exact scalar constant over all private estimators is the squared total variation modulus times an explicit optimal noise variance. The same modulus determines the minimum sensitivity for matching the target to first order, and the corresponding noisy average attains the bound. At a fixed privacy scale, the leading constant can vary with the balance between the multiplicative and additive privacy terms. When sampling and privacy errors are comparable, we characterize the exact constant through Gaussian count experiments. Privacy-preserving reconstruction from cell labels transfers the count lower bound to all private estimators, and calibrated count releases attain it. We recover the Fisher information bound when sampling dominates and give closed forms for bounded means, categorical contrasts, and joint stratified binary rates.",
-          "pdf_url": "/assets/pdf/papers/Efficiency-DP.pdf"
+          "abstract": "Protecting individual privacy has become a central and urgent concern in modern data analysis, given the vast quantities of data now generated and processed. In this paper, we develop a systematic theory of exact asymptotic efficiency for regular parametric estimation under central zero-concentrated differential privacy (zCDP). In the privacy regime, the governing object is a diameter-constrained information region: the set of information matrices generated by statistics with diameter at most one. For weighted quadratic loss, we show that the exact local minimax risk is an inverse information variational functional over this region. More generally, a mixed information region yields a unified efficiency constant across different regimes, covering the privacy regime and classical Fisher efficiency. A matching estimator releases the empirical mean of a nearly optimal bounded statistic with Gaussian noise and locally inverts its population moment map. Our theory differs from classical efficiency theory in its set-valued information geometry and loss-dependent efficient estimator. As examples, we provide closed-form constants and optimal procedures for various concrete models, including one-dimensional regular families, Gaussian means, categorical probability vectors, and regression models among others. The theory also yields exact asymptotic efficiency under Gaussian differential privacy through a precise parameter rescaling.",
+          "pdf_url": "/assets/pdf/papers/Efficiency-zCDP.pdf"
          },
          {
           "authors": "Cai, T. T. & Li, Y. (2026).",
